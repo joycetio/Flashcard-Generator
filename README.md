@@ -44,9 +44,9 @@ The bulk of this assignment is implementing ClozeCard. If you build a robust Clo
 
 ## Code Explanation: 
 By using three modules instead of one, it helped me organize my code and be more efficient. 
-    * **flashcard.js**: Contains an if else statement that decides which type of flashcard to run based on user input. 
-    * **BasicCard.js**: Contains a constructor that takes in front and back arguments. 
-    * **ClozeCard.js**: Contains a constructor that takes in text, and cloze arguments.
+* **flashcard.js**: Contains an if else statement that decides which type of flashcard to run based on user input. 
+* **BasicCard.js**: Contains a constructor that takes in front and back arguments. 
+* **ClozeCard.js**: Contains a constructor that takes in text, and cloze arguments.
 
 if-else statement: 
 ````
