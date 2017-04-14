@@ -1,22 +1,14 @@
-function BasicCard(front, back) {
-	this.front = front;
-	this.back = back;
-}; 
+var inquirer = require("inquirer");
+var fs = require("fs");
 
-var harryPotter = new BasicCard("Who played Harry Potter in the Harry Potter movie series?", "Daniel Radcliffe"); 
+//holds the value whether user chooses "basic" or "cloze" flashcard
+var cardType = process.argv[2].toLowerCase(); 
 
-BasicCard.prototype.printInfo = function() {
-	var userCommand = process.argv[2]; 
-
-	switch(userCommand){
-		case "front": 
-		console.log(this.front);
-		break;
-
-		case "back":
-		console.log(this.back);
-		break;
-	};
+//if else statement to determine which constructor to run based on cardType 
+if (cardType === "basic") {
+	var BasicCard = require("./BasicCard");
+} else if (cardType === "cloze") {
+	var ClozeCard = require("./ClozeCard"); 
+} else {
+	console.log("Wrong app! Please choose 'basic' or 'cloze' to decide which flashcard you want to use.")
 };
-
-harryPotter.printInfo();
