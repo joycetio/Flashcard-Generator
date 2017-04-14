@@ -1,5 +1,8 @@
 # HW-Flashcard-Generator
 
+## Description on how to use the app: 
+Choose whether you want to use a basic type of flashcard or a cloze type of flashcard by typing "basic" or "cloze" in your CLI. 
+
 ## Overview: 
 In this week's assignment, you will create the backend for a basic flashcard application.
 The backend will essentially constitute an API that allows users to create two types of flashcards.
@@ -32,3 +35,29 @@ A flash card built this way has three parts:
 
 As your application will not have a front end, your only need to determine an efficient way to store cloze-deleted cards_you don't have to solve the problem of displaying them. You are free to decide how you'd like to implement this. One might represent the above flashcard thus: 
 The bulk of this assignment is implementing ClozeCard. If you build a robust ClozeCard implementation, feel free to try your hand at implementing a front-end, as well.  
+
+## Technologies Used: 
+* npm packages 
+* node.js
+* javascript / jQuery 
+* CLI 
+
+## Code Explanation: 
+By using three modules instead of one, it helped me organize my code and be more efficient. 
+    * **flashcard.js**: Contains an if else statement that decides which type of flashcard to run based on user input. 
+    * **BasicCard.js**: Contains a constructor that takes in front and back arguments. 
+    * **ClozeCard.js**: Contains a constructor that takes in text, and cloze arguments.
+
+if-else statement: 
+````
+if (cardType === "basic") {
+    var BasicCard = require("./BasicCard");
+} else if (cardType === "cloze") {
+    var ClozeCard = require("./ClozeCard"); 
+} else {
+    console.log("Wrong app! Please choose 'basic' or 'cloze' to decide which flashcard you want to use.")
+};
+````
+
+
+
