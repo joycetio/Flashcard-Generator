@@ -1,0 +1,23 @@
+{
+  "name": "flashcard-generator",
+  "version": "1.0.0",
+  "description": "A flashcard generator that lets the user choose what type of flashcard to use: basic or cloze. ",
+  "main": "BasicCard.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joycetio/Flashcard-Generator.git"
+  },
+  "author": "Joyce Tio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joycetio/Flashcard-Generator/issues"
+  },
+  "homepage": "https://github.com/joycetio/Flashcard-Generator#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "inquirer": "^3.0.6"
+  }
+}
